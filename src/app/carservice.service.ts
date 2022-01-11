@@ -28,5 +28,23 @@ export class CarserviceService {
   userBooking(){
     return this.http.get('url')
   }
+  listCustomer(){
+    return this.http.get('url')
+  }
+  listDriver(){
+    return this.http.get('url')
+  }
+  listCar(){
+    return this.http.get('url')
+  }
+  drevCar(){
+    return this.http.get('url')
+  }
+  feedCar(){
+    return this.http.get('url')
+  }
+  revCar(){
+    return this.http.get('url')
+  }
   
 }

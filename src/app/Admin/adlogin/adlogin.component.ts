@@ -33,7 +33,7 @@ export class AdloginComponent implements OnInit {
     })
     // console.log(this.adloginForm.value)
       
-    this.router.navigate(['/addash'])
+    this.router.navigate(['/booking'])
   // },error =>{
   //   console.log(error);  
   // })
