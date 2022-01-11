@@ -1,0 +1,13 @@
+
+<body>
+    <h1 style="text-align: center;"> Admin Login </h1> 
+    <form [formGroup]="adloginForm">
+        <div class="container" style="margin-left: 400px;"> 
+            <label>Username : </label> 
+            <input type="text" placeholder="Enter Username" name="username" required formControlName="username" [(ngModel)]="username">
+            <label>Password : </label> 
+            <input type="password" placeholder="Enter Password" name="password" required formControlName="password" [(ngModel)]="password">
+            <input type="submit" class="button" value="Login" (click)="onLoginSubmit()">
+        </div> 
+    </form>   
+</body>

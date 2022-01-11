@@ -1,0 +1,32 @@
+Body {
+    font-family: Calibri, Helvetica, sans-serif;
+  }
+  .button { 
+         background-color: black; 
+         width: 20%;
+          color: rgb(243, 241, 237); 
+          padding: 10px; 
+          margin: 10px 0px; 
+          border: none; 
+          cursor: pointer;
+          font-size: 20px;
+           } 
+   form { 
+          border: 1px solid #0e0d0d;
+      } 
+   input[type=text], input[type=password] { 
+          width: 50%; 
+          margin: 20px 0;
+          padding: 12px 40px; 
+          display:block; 
+          border: 3px solid green; 
+          box-sizing: border-box;
+      }
+    .button:hover { 
+          opacity: 0.7; 
+      } 
+        
+   .container { 
+          padding: 60px;
+          width: 70%;
+      }

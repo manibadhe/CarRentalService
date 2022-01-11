@@ -1,0 +1,16 @@
+<div class="row">
+    <div class="col-md-3">
+<app-userdash></app-userdash>
+    </div>
+    <div class="col-md-9">
+<table class="table">
+    <tbody>
+          <tr *ngFor="let booking of bookings; let i = index">
+            <td scope="col">{{i}}.{{booking.carName}}<br>{{booking.driverName}}</td>
+            <td scope="col">{{booking.price}}<br>{{booking.location}}<br>{{booking.from}} To {{booking.to}}</td>
+            <td scope="col">{{booking.status}}</td>
+          </tr>
+    </tbody>
+  </table>
+  </div>
+  </div>

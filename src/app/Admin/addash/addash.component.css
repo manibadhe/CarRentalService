@@ -1,0 +1,19 @@
+
+.row.content {height: 1500px}
+.sidenav {
+    background-color: #f1f1f1;
+    height: 100%;
+}
+
+@media screen and (max-width: 767px) {
+.sidenav {
+    height: auto;
+    padding: 15px;
+}
+.row.content {height: auto;} 
+}
+h4.admin_ts {
+    padding: 18px 20px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}

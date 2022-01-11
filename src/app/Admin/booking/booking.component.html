@@ -1,0 +1,31 @@
+<div class="row">
+    <div class="col-md-3">
+<app-addash></app-addash>
+    </div>
+    <div class="col-md-9">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="dropdown">
+                    <button class="dropbtn">Filter</button>
+                    <div class="dropdown-content">
+                    <a href="#">All Bookings</a>
+                    <a href="#">Pending Bookings</a>
+                    <a href="#">Confirm Bookings</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-md-4"></div>
+            <div class="col-md-4"></div>
+        </div>
+        <table class="table">
+            <tbody>
+                <tr *ngFor="let booking of bookings; let i = index">
+                    <td scope="col">{{i}}.{{booking.carName}}<br>{{booking.driverName}}</td>
+                    <td scope="col">{{booking.price}}<br>{{booking.location}}<br>{{booking.from}} To {{booking.to}}</td>
+                    <td ><button type="button" onclick="alert('Booking Confirmed!')" class="btn btn-success" (click)="confirmBooking(booking.id)">Confirm</button>
+                        <button type="button" onclick="alert('Booking Canclled!')" class="btn btn-danger" style="margin-left: 20px;">Deny</button></td>
+                  </tr>
+            </tbody>
+          </table>
+    </div>
+</div>

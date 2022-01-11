@@ -1,0 +1,24 @@
+<div class="row">
+    <div class="col-md-3">
+<app-userdash></app-userdash>
+    </div>
+    <div class="col-md-9">
+
+<h3>Feedback Form</h3>
+
+<div class="container" style="width: 90%;">
+  <form action="/action_page.php">
+    <form [formGroup]="carfForm">
+    <label for="fname">Name</label>
+    <input type="text" id="name" name="name" placeholder="Your name.." formControlName="name">
+
+    <label for="email">Email</label>
+    <input type="text" id="email" name="email" placeholder="Your Email id" formControlName="email">
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px" formControlName="subject"></textarea>
+
+    <input type="submit" value="Submit" onclick="alert('Submited Successfully!')" (click)="onSubmit()">
+    </form>
+  </form>
+</div>
